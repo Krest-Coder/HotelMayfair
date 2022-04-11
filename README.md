@@ -1,4 +1,3 @@
-# HotelMayfair
 <p align="center"><h1 align="center">HotelMayFair</h1>
 
 
