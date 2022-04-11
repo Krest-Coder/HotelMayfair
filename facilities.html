@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style-facilities.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/sharedstyle.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+</head>
+
+<body>
+    <header class ="d-flex flex-row justify-content-between p-4">
+        <span class="landingpage-header-logo p-2">
+            HOTELFRENZ
+        </span>
+        <nav class="">
+          <ul class="nav justify-content-end">
+              <li class="nav-item header-nav-item">
+                <a class=" class-home nav-link active" href="index.html">HOME</a>
+              </li>
+              <li class="nav-item header-nav-item">
+                <a class=" class-room nav-link" href="room.html">ROOMS & SUITES</a>
+              </li>
+              <li class="nav-item header-nav-item">
+                <a class="  class-fac nav-link" href="facilities.html">FACILITIES</a>
+              </li>
+              <li class="nav-item header-nav-item ">
+                  <a class=" class-contact nav-link" href="contactUs.html">CONTACT US</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container"> 
+            <section>
+                <div id="double-room-book-rooms">
+                    <div id="double-room">
+                        <div id="top">
+                            <div class="checkout">
+                                <h4>DOUBLE ROOM</h4>
+                                <p class="sub-head" id="text">Checkout our Double Room Option for your Comfort</p>
+                            </div>
+                            <div class="night">
+                                <h4> N120,000</h4>
+                                <p class="sub-head">/night</p>
+                            </div>
+                        </div>
+                        <img id="imag" src="./img/Rectangle 118.png" alt="first-image">
+                    </div>
+                
+
+                <div id="book-rooms">
+                    <form action="#" method="post" id="form-book-rooms">
+                        <h6>BOOK YOUR</h6>
+                        <h3 id="rooms-book-rooms">ROOMS</h3>
+
+                        <input type="text" name="arrival" class="date" onfocus="(this.type='date')" placeholder="ARRIVAL" required><br><br>
+                        <input type="text" name="departure" class="date" onfocus="(this.type='date')" placeholder="DEPARTURE" required><br><br>
+                        <input list="rums1" class="num" name="rums1" placeholder="1 ROOM" required>
+                        <datalist id="rums1">
+                            <option value="1 ROOM">
+                            <option value="2 ROOMS">
+                            <option value="3 ROOMS">
+                            <option value="4 ROOMS">
+                            <option value="5 ROOMS">
+                        </datalist>
+                        <span class="hidden"><br></span>
+                        <input list="rums2" name="beds" class="num" name="rums2" placeholder="BEDS" required>
+                        <datalist id="rums2">
+                            <option value="1 BED">
+                            <option value="2 BEDS">
+                            <option value="3 BEDS">
+                            <option value="4 BEDS">
+                            <option value="5 BEDS">
+                        </datalist>
+                        <br><br>
+                        <input list="rums3" name="adult" class="num" placeholder="1 ADULT" required>
+                        <datalist id="rums3">
+                            <option value="1 ADULT">
+                            <option value="2 ADULTS">
+                            <option value="3 ADULTS">
+                            <option value="4 ADULTS">
+                            <option value="5 ADULTS">
+                        </datalist>
+                        <span class="hidden"><br></span>
+                        <input list="rums4" name="child" class="num" placeholder="1 CHILD" required>
+                        <datalist id="rums4">
+                            <option value="1 CHILD">
+                            <option value="2 CHILDREN">
+                            <option value="3 CHILDREN">
+                            <option value="4 CHILDREN">
+                            <option value="5 CHILDREN">
+                        </datalist>
+                        <br><br>
+                        <div id="book-div"><button type="submit" id="book">BOOK</button>
+                    </form>
+                </div>
+            </div>
+            </section>       
+     
+            
+                
+                       
+
+                <section>
+                    <div class="more-images-container">
+                        <div class="more-images">
+                            <img src="img\first-image.png" alt="" >
+                            <img src="img\Second-image.png" alt="" >
+                            <img src="img\third-image.png" alt="" >
+                            <img src="img\fourth-image.png" alt="" >
+                            <img src="img\fifth-image.png" alt=""  fifth-image>
+                        
+
+                            <!-- <p>Room Facilities</p> -->
+                            <div class="row roomfacility">
+                                <div class="iconsection">
+                                    <svg width="29" height="32" viewBox="0 0 29 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M28.9925 15.988L28.0573 25.8195C27.818 28.3633 23.4246 28.0133 23.6638 25.5133L24.3888 17.8568L21.4091 18.0005C22.1413 19.2943 22.5546 20.7444 22.5546 22.2819C22.5546 24.857 21.3873 27.2008 19.4879 28.9384L16.6386 26.482C20.8363 22.5007 17.5884 16.0317 11.2737 16.0317C9.39593 16.0317 7.68494 16.6505 6.4017 17.6568L3.55247 15.2005C5.14746 13.9067 7.1847 13.0066 9.45393 12.6879L14.9131 7.33147L11.8247 5.78142L8.08369 8.65651C5.90871 10.3316 2.96523 7.50022 5.14746 5.81892L10.0774 2.02506C10.7879 1.47504 11.8247 1.38754 12.6512 1.80005C12.6512 1.80005 22.7503 6.85645 22.7648 6.86895C23.9393 7.50022 24.2656 9.11902 23.2071 10.1566L18.9731 14.3129L26.6653 13.9442C28.0065 13.8754 29.1013 14.8442 28.9925 15.988ZM24.2873 6.36269C26.3246 6.36269 27.9775 4.93765 27.9775 3.18134C27.9775 1.42504 26.3246 0 24.2873 0C22.2501 0 20.5971 1.42504 20.5971 3.18134C20.5971 4.93765 22.2501 6.36269 24.2873 6.36269ZM11.2809 28.5321C5.43746 28.5321 2.04449 22.8694 5.28521 18.7756L2.40698 16.2942C0.898994 17.938 0 20.0193 0 22.2757C0 30.4447 10.9257 34.8635 18.2264 29.9321L15.3481 27.4508C14.1881 28.1321 12.7889 28.5321 11.2809 28.5321Z"
+                                        fill="#333333" />
+                                </svg>
+                                    <span>Wheel Chair</span>
+                                </div>
+                                <div class=" iconsection">
+                                    <svg width="32" height="31" viewBox="0 0 32 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M31.2492 9.04167H27.5073L26.4673 5.68333C25.3986 2.23055 22.8479 0 19.9685 0H12.031C9.15228 0 6.60103 2.23055 5.53165 5.68333L4.49165 9.04167H0.750399C0.262273 9.04167 -0.0958524 9.63422 0.0228977 10.2453L0.397898 12.1828C0.481023 12.6139 0.781024 12.9167 1.1254 12.9167H2.37978C1.5404 13.8636 0.999774 15.2401 0.999774 16.7917V20.6667C0.999774 21.968 1.38477 23.1426 1.99978 24.0516V28.4167C1.99978 29.8431 2.8954 31 3.99978 31H5.99978C7.10416 31 7.99978 29.8431 7.99978 28.4167V25.8333H23.9998V28.4167C23.9998 29.8431 24.8954 31 25.9998 31H27.9998C29.1042 31 29.9998 29.8431 29.9998 28.4167V24.0516C30.6148 23.1434 30.9998 21.9688 30.9998 20.6667V16.7917C30.9998 15.2401 30.4592 13.8636 29.6204 12.9167H30.8748C31.2192 12.9167 31.5192 12.6139 31.6023 12.1828L31.9773 10.2453C32.0954 9.63422 31.7373 9.04167 31.2492 9.04167ZM9.24541 7.60227C9.70104 6.13138 10.8042 5.16667 12.031 5.16667H19.9685C21.1954 5.16667 22.2986 6.13138 22.7542 7.60227L23.9998 11.625H7.99978L9.24541 7.60227ZM5.99978 20.6505C4.79978 20.6505 3.99978 19.6204 3.99978 18.0753C3.99978 16.5301 4.79978 15.5 5.99978 15.5C7.19978 15.5 8.99978 17.8177 8.99978 19.3629C8.99978 20.908 7.19978 20.6505 5.99978 20.6505ZM25.9998 20.6505C24.7998 20.6505 22.9998 20.908 22.9998 19.3629C22.9998 17.8177 24.7998 15.5 25.9998 15.5C27.1998 15.5 27.9998 16.5301 27.9998 18.0753C27.9998 19.6204 27.1998 20.6505 25.9998 20.6505Z"
+                                        fill="#333333" />
+                                </svg>
+                                    <span>
+                                </span>Parking</span>
+                                </div>
+                                <div class=" iconsection">
+                                    <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M35.8438 4.93324H31.2188L30.7013 3.83017C30.5093 3.42045 30.2141 3.07586 29.8488 2.83502C29.4835 2.59418 29.0625 2.46659 28.6331 2.46656H24.7582L22.7868 0.363725C22.0576 -0.413277 20.8125 0.137099 20.8125 1.23554V12.7857L30.0625 16.3092V13.5666H32.375C34.9296 13.5666 37 11.3582 37 8.63325V6.16658C37 5.48516 36.4826 4.93324 35.8438 4.93324ZM27.75 8.63325C27.1112 8.63325 26.5938 8.08133 26.5938 7.39991C26.5938 6.71849 27.1112 6.16658 27.75 6.16658C28.3888 6.16658 28.9062 6.71849 28.9062 7.39991C28.9062 8.08133 28.3888 8.63325 27.75 8.63325ZM6.9375 14.7999C5.66273 14.7999 4.625 13.693 4.625 12.3333C4.625 10.9712 3.58943 9.86659 2.3125 9.86659C1.03557 9.86659 0 10.9712 0 12.3333C0 15.5446 1.93889 18.2571 4.625 19.2785V35.7667C4.625 36.4481 5.14242 37 5.78125 37H10.4062C11.0451 37 11.5625 36.4481 11.5625 35.7667V27.1333H23.125V35.7667C23.125 36.4481 23.6424 37 24.2812 37H28.9062C29.5451 37 30.0625 36.4481 30.0625 35.7667V18.9278L19.2263 14.7999H6.9375Z"
+                                        fill="#333333" />
+                                </svg>
+                                    <span>Allow Pets</span>
+                                </div>
+                                <div class=" iconsection">
+                                    <svg width="36" height="29" viewBox="0 0 36 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M35.7137 7.95429C25.7478 -2.65337 10.2481 -2.64949 0.286265 7.95429C-0.0883604 8.35303 -0.095673 9.02819 0.266577 9.44183L2.19258 11.6408C2.53795 12.0356 3.0937 12.0441 3.45258 11.6654C11.6606 3.01199 24.3382 3.01004 32.5479 11.6654C32.9068 12.0441 33.4625 12.035 33.8079 11.6408L35.7339 9.44183C36.0956 9.02819 36.0883 8.35303 35.7137 7.95429ZM18 20.7143C16.0115 20.7143 14.4 22.5689 14.4 24.8571C14.4 27.1454 16.0115 29 18 29C19.9884 29 21.6 27.1454 21.6 24.8571C21.6 22.5689 19.9884 20.7143 18 20.7143ZM29.4002 15.3033C22.9168 8.70518 13.0758 8.7123 6.59977 15.3033C6.21164 15.6982 6.19927 16.3837 6.56771 16.8019L8.50496 19.0021C8.84246 19.3853 9.38583 19.4112 9.74527 19.0539C14.4675 14.3563 21.5432 14.3667 26.2541 19.0539C26.6135 19.4112 27.1569 19.386 27.4944 19.0021L29.4317 16.8019C29.8007 16.3837 29.7877 15.6975 29.4002 15.3033Z"
+                                        fill="#333333" />
+                                </svg>
+                                    <span>Wifi</span>
+                                </div>
+                                <div class="iconsection">
+                                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M21.8075 13.4277C22.095 13.2944 22.4161 13.2512 22.7285 13.304C23.041 13.3568 23.3301 13.5031 23.5577 13.7235L26.7689 17.1582L16.8026 25.9515C17.7356 26.137 18.3952 26.4438 18.964 26.7091C19.7237 27.0637 20.3238 27.3439 21.6512 27.3439C22.9785 27.3439 23.5787 27.0638 24.3386 26.7091L24.3536 26.7021C25.8214 26.0178 27.1835 25.1266 28.3982 24.0556L31.0396 21.7249L36.2057 27.2496C36.8091 27.1386 37.237 26.94 37.7314 26.7094C38.2613 26.4472 38.814 26.2336 39.3825 26.0714L25.8192 11.5668L25.7828 11.5292C25.1013 10.8507 24.2281 10.3975 23.281 10.2306C22.3339 10.0638 21.3584 10.1913 20.486 10.5961L14.1831 13.5375L15.5046 16.3695L21.8075 13.4277Z"
+                                        fill="#333333" />
+                                    <path
+                                        d="M36.3281 16.4062C38.2698 16.4062 39.8438 14.8323 39.8438 12.8906C39.8438 10.949 38.2698 9.375 36.3281 9.375C34.3865 9.375 32.8125 10.949 32.8125 12.8906C32.8125 14.8323 34.3865 16.4062 36.3281 16.4062Z"
+                                        fill="#333333" />
+                                    <path
+                                        d="M41.7407 36.7188C39.7199 36.7188 38.6174 37.2332 37.7316 37.6465C36.9717 38.0011 36.3715 38.2812 35.0438 38.2812C33.7162 38.2812 33.1162 38.0012 32.3563 37.6465C31.4705 37.2332 30.3682 36.7188 28.3474 36.7188C26.3266 36.7188 25.2242 37.2333 24.3385 37.6465C23.5786 38.0011 22.9785 38.2812 21.6511 38.2812C20.3236 38.2812 19.7236 38.0012 18.9639 37.6465C18.0781 37.2332 16.9758 36.7188 14.9551 36.7188C12.9344 36.7188 11.8319 37.2333 10.9462 37.6465C10.1863 38.0011 9.58623 38.2812 8.25879 38.2812C6.93135 38.2812 6.33125 38.0012 5.57139 37.6465C4.68564 37.2333 3.5832 36.7188 1.5625 36.7188V39.8438C2.88994 39.8438 3.49004 40.1238 4.2499 40.4785C5.13564 40.8918 6.23809 41.4062 8.25879 41.4062C10.2795 41.4062 11.3819 40.8917 12.2677 40.4785C13.0275 40.1239 13.6276 39.8438 14.9551 39.8438C16.2825 39.8438 16.8825 40.1238 17.6423 40.4785C18.528 40.8918 19.6304 41.4062 21.6511 41.4062C23.6718 41.4062 24.7742 40.8917 25.66 40.4785C26.4198 40.1239 27.02 39.8438 28.3474 39.8438C29.6747 39.8438 30.275 40.1238 31.0349 40.4785C31.9207 40.8918 33.023 41.4062 35.0438 41.4062C37.0646 41.4062 38.1672 40.8918 39.053 40.4785C39.8129 40.1239 40.4132 39.8438 41.7407 39.8438C43.0683 39.8438 43.6686 40.1238 44.4283 40.4785C45.3143 40.8919 46.4167 41.4062 48.4375 41.4062V38.2812C47.11 38.2812 46.5097 38.0012 45.7499 37.6465C44.864 37.2332 43.7615 36.7188 41.7407 36.7188Z"
+                                        fill="#333333" />
+                                    <path
+                                        d="M48.1737 30.4646C47.0271 30.4295 46.4573 30.1643 45.7499 29.8341C44.9036 29.4392 43.8577 28.9532 42.0045 28.9105C41.9177 28.9085 41.8312 28.9063 41.7408 28.9063C41.6505 28.9063 41.5639 28.9085 41.4771 28.9105C39.6239 28.9532 38.5779 29.4392 37.7318 29.8341C37.0242 30.1643 36.4545 30.4298 35.3078 30.4646C35.2229 30.4671 35.1355 30.4688 35.0441 30.4688C34.9527 30.4688 34.8652 30.4671 34.7805 30.4646C33.6339 30.4295 33.0642 30.1643 32.3567 29.8341C31.5105 29.4393 30.4646 28.9533 28.6115 28.9105C28.5247 28.9085 28.4383 28.9063 28.3479 28.9063C28.2574 28.9063 28.171 28.9085 28.0842 28.9105C26.2311 28.9532 25.1851 29.4393 24.339 29.8341C23.6315 30.1643 23.0618 30.4298 21.9153 30.4646C21.8305 30.4671 21.7431 30.4688 21.6517 30.4688C21.5603 30.4688 21.4729 30.4671 21.388 30.4646C20.2416 30.4295 19.6719 30.1643 18.9646 29.8341C18.1185 29.4393 17.0726 28.9532 15.2195 28.9105C15.1561 28.9087 15.0926 28.9077 15.0291 28.9072C15.0042 28.9072 14.9803 28.9061 14.9556 28.9061C14.8651 28.9061 14.7786 28.9083 14.6919 28.9103C12.8389 28.953 11.7929 29.4391 10.9468 29.8339C10.2393 30.1641 9.66963 30.4296 8.52314 30.4644C8.43828 30.4669 8.35088 30.4686 8.25947 30.4686C8.16807 30.4686 8.08066 30.4669 7.9958 30.4644C6.84854 30.4297 6.2792 30.1643 5.57129 29.834C4.7252 29.4392 3.6793 28.9531 1.82617 28.9104C1.73936 28.9084 1.65283 28.9062 1.5625 28.9062V32.0312C2.88994 32.0312 3.49004 32.3112 4.2499 32.6659C5.13564 33.0792 6.23809 33.5937 8.25879 33.5937C10.2795 33.5937 11.3819 33.0791 12.2677 32.6659C13.0275 32.3113 13.6276 32.0312 14.9551 32.0312C16.2825 32.0312 16.8825 32.3112 17.6423 32.6659C18.528 33.0792 19.6304 33.5937 21.6511 33.5937C23.6718 33.5937 24.7742 33.0791 25.66 32.6659C26.4198 32.3113 27.02 32.0312 28.3474 32.0312C29.6747 32.0312 30.275 32.3112 31.0349 32.6659C31.9207 33.0792 33.023 33.5937 35.0438 33.5937C37.0646 33.5937 38.1672 33.0792 39.053 32.6659C39.8129 32.3113 40.4132 32.0312 41.7407 32.0312C43.0683 32.0312 43.6686 32.3112 44.4283 32.6659C45.3143 33.0793 46.4167 33.5937 48.4375 33.5937V30.4688C48.3459 30.4688 48.2585 30.4671 48.1737 30.4646Z"
+                                        fill="#333333" />
+                                </svg>
+                                    <span>Swimming Pool</span>
+                                </div>
+                                <div class=" iconsection">
+                                    <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M13.3695 34.8992C13.5134 35.0552 13.5899 35.2617 13.5825 35.4739C13.575 35.686 13.4841 35.8866 13.3295 36.032L11.5919 37.6568C11.4368 37.801 11.2307 37.8777 11.0191 37.87C10.8074 37.8624 10.6075 37.771 10.4631 37.616L0.343922 26.7104C0.200122 26.5543 0.123742 26.3478 0.131382 26.1356C0.139022 25.9235 0.230063 25.723 0.384722 25.5776L2.12472 23.9552C2.2015 23.8838 2.29161 23.8281 2.3899 23.7915C2.4882 23.7548 2.59275 23.7379 2.69758 23.7417C2.80241 23.7455 2.90546 23.7699 3.00085 23.8136C3.09625 23.8572 3.1821 23.9192 3.25352 23.996L13.3695 34.8992ZM26.2815 14.3792C26.4253 14.5353 26.5017 14.7419 26.4941 14.954C26.4864 15.1661 26.3954 15.3667 26.2407 15.512L15.3047 25.728C15.1496 25.8722 14.9435 25.9489 14.7319 25.9412C14.5202 25.9336 14.3203 25.8422 14.1759 25.6872L11.5655 22.8704C11.4217 22.7143 11.3453 22.5078 11.353 22.2956C11.3606 22.0835 11.4517 21.883 11.6063 21.7376L22.5399 11.5216C22.6166 11.4502 22.7067 11.3945 22.8049 11.3579C22.9031 11.3213 23.0076 11.3044 23.1124 11.3082C23.2171 11.312 23.3201 11.3364 23.4155 11.38C23.5108 11.4236 23.5966 11.4856 23.6679 11.5624L26.2815 14.3792ZM17.0903 31.4216C17.3895 31.744 17.3711 32.2536 17.0495 32.5544L15.3095 34.1784C15.2327 34.2499 15.1426 34.3055 15.0443 34.3422C14.946 34.3788 14.8415 34.3957 14.7367 34.3919C14.6318 34.3881 14.5288 34.3637 14.4334 34.3201C14.338 34.2765 14.2521 34.2145 14.1807 34.1376L4.06712 23.232C3.92322 23.076 3.8467 22.8695 3.85419 22.6574C3.86168 22.4453 3.95257 22.2447 4.10712 22.0992L5.84392 20.476C5.99908 20.3319 6.20511 20.2552 6.41676 20.2629C6.62842 20.2705 6.82838 20.3618 6.97272 20.5168L17.0903 31.4216ZM33.9407 14.7704C34.0844 14.9266 34.1607 15.1333 34.1529 15.3454C34.1451 15.5575 34.0539 15.758 33.8991 15.9032L32.1599 17.5272C32.0047 17.6715 31.7986 17.7484 31.5868 17.7409C31.3751 17.7334 31.1749 17.6421 31.0303 17.4872L20.9151 6.58403C20.771 6.42811 20.6944 6.22157 20.7019 6.00939C20.7094 5.79721 20.8004 5.59659 20.9551 5.45123L22.6991 3.82323C22.7758 3.75177 22.8659 3.69615 22.9641 3.65952C23.0623 3.6229 23.1668 3.606 23.2716 3.60979C23.3763 3.61358 23.4793 3.63798 23.5747 3.68161C23.67 3.72523 23.7558 3.78722 23.8271 3.86403L33.9407 14.7704ZM37.6559 11.2984C37.7996 11.4548 37.8758 11.6614 37.8682 11.8736C37.8606 12.0858 37.7696 12.2864 37.6151 12.432L35.8791 14.0552C35.8025 14.1267 35.7125 14.1824 35.6143 14.2191C35.5161 14.2558 35.4116 14.2728 35.3068 14.2691C35.2021 14.2653 35.0991 14.241 35.0037 14.1975C34.9084 14.1539 34.8225 14.092 34.7511 14.0152L24.6375 3.10723C24.4938 2.95098 24.4174 2.7444 24.4248 2.53222C24.4323 2.32003 24.5231 2.11935 24.6775 1.97363L26.4151 0.347226C26.4917 0.27565 26.5816 0.219893 26.6797 0.183153C26.7779 0.146413 26.8823 0.129414 26.987 0.13313C27.0918 0.136847 27.1947 0.161206 27.29 0.20481C27.3853 0.248414 27.471 0.310405 27.5423 0.387226L37.6559 11.2984Z"
+                                        fill="#333333" />
+                                </svg>
+                                    <span>Gym</span>
+                                </div>
+                                <div class=" iconsection">
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M38.125 30H1.875C1.70924 30 1.55027 29.9342 1.43306 29.8169C1.31585 29.6997 1.25 29.5408 1.25 29.375V6.875C1.25 6.70924 1.31585 6.55027 1.43306 6.43306C1.55027 6.31585 1.70924 6.25 1.875 6.25H38.125C38.2908 6.25 38.4497 6.31585 38.5669 6.43306C38.6842 6.55027 38.75 6.70924 38.75 6.875V29.375C38.75 29.5408 38.6842 29.6997 38.5669 29.8169C38.4497 29.9342 38.2908 30 38.125 30Z"
+                                        fill="#333333" />
+                                    <path
+                                        d="M30.9375 31.25H9.0625C8.88991 31.25 8.75 31.3899 8.75 31.5625V33.4375C8.75 33.6101 8.88991 33.75 9.0625 33.75H30.9375C31.1101 33.75 31.25 33.6101 31.25 33.4375V31.5625C31.25 31.3899 31.1101 31.25 30.9375 31.25Z"
+                                        fill="#333333" />
+                                </svg>
+                                    <span>Television</span>
+                                </div>
+                                <div class=" iconsection">
+                                    <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M35.5875 31.875H3.75V35.625H41.25V31.875H35.5875ZM39.375 30C38.8688 22.3688 33.2813 16.125 25.95 14.6063C26.1924 14.0353 26.2899 13.4132 26.2337 12.7954C26.1775 12.1776 25.9693 11.5833 25.6278 11.0655C25.2863 10.5476 24.822 10.1223 24.2763 9.82733C23.7305 9.53238 23.1203 9.37699 22.5 9.375C21.8797 9.37699 21.2695 9.53238 20.7237 9.82733C20.178 10.1223 19.7137 10.5476 19.3722 11.0655C19.0307 11.5833 18.8225 12.1776 18.7663 12.7954C18.7101 13.4132 18.8076 14.0353 19.05 14.6063C11.7188 16.125 6.13125 22.3688 5.625 30H39.375ZM22.5 17.9625C28.0313 17.9625 32.7563 21.3938 34.6875 26.2313H10.3125C11.2844 23.7924 12.9651 21.7009 15.1376 20.227C17.3101 18.753 19.8747 17.9642 22.5 17.9625Z"
+                                        fill="#333333" />
+                                </svg>
+                                    <span>Roon Service</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                       <div class="customer-review-section">
+                           
+                          <h1 id="customer-review-header">Customer Review</h1>
+                            <div class="review">
+                             <p id="customer-review">The room was exquisite, the breakfast was real special. The room service was very professional and exceptional is their service. If I come around again, I would definitely use them again, again and again</p>
+                             <img id="customer-img" src="img\Ellipse 4.png" alt=""><span id="customer-name">Angela Samara</span>
+                             <div>
+                                <a href="#" class="btn previous-round">&#8249;</a>
+                                <a href="#" class="btn next-round">&#8250;</a>
+                            </div>    
+                        </div>
+                    </div>
+                </section> 
+            
+            <section>
+                <div class="row ser">
+                    <div class="col-md-9 services">Services includes; In- Door Swimming Pool, Free Breakfast, High speed Internet, Free Airport Pickup & Drop-Off, Car Rental, Beach Tour, Pool Lounge, Duplex-Style Serviced Apartments, Maximum Security, 24/7 Power Supply and many more.</div>
+                </div>
+                <div class="col-md-9 line">
+                    <hr>
+
+                </div>
+
+                <div class=" row ">
+                    <div class="col-md-3 like "><b>You may also like</b></div>
+                </div>
+                <div class="row you ">
+                    <div class="col-md-3 ">
+                        <img class="row img-fluid " src="./img/Rectangle 111.png" alt="Chania " width="360px " height="360px ">
+                        <div class="row elegant ">
+                            <br class="col-md-1 ">Elegant Room<br>N140,000/night</br>
+                            <a class="col-md-4 " href="# " role="button "></a>
+                            <button type="button " class="btn btn-outline-primary butto1 ">Book</button>
+                        </div>
+
+                    </div><br>
+                    <div class="col-md-3 ">
+                        <img class="row img-fluid " src="./img/Rectangle 112.png " alt="Chania " width="360px " height="360px ">
+                        <div class="row personal ">
+                            <br class="col-md-1 ">Personal Room<br>N80,000/night</br>
+                            <a class="col-md-4 " href="# " role="button "></a>
+                            <button type="button " class="btn btn-outline-primary butto2 ">Book</button>
+                        </div>
+
+                    </div><br>
+                    <div class="col-md-3 ">
+                        <img class="row img-fluid " src="./img/Rectangle 113.png " alt="Chania " width="360px " height="360px ">
+                        <div class="row presidential ">
+                            <br class="col-md-1 ">Presidential Room<br>N300,000/night</br>
+                            <a class="col-md-3 but " href="# " role="button "></a>
+                            <button type="button " class="btn btn-outline-primary butto3 ">Book</button>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </section>
+           
+        </div>
+</main>
+<footer>
+    <div id="footer" class="container-fluid">
+    
+        <div class="row">
+            <div class="col-5">
+    <p id="paragraph1"> Hotel Frenz </p>
+        
+        <p id="subheading1"> Hotel Franz is located in the heart of the historic center of Lagos in an extremely characteristic, quite and lively area within short walk distance to all sites and is surrounded by the extraordinary beauty of churches, buildings, shops and monuments. Franz Hotel is part of a lovingly restored 1800 palace. </p>
+    </div>
+        
+            
+            <div class="col">
+        <p id="paragraph2">About</p>
+        
+        <p id="subheading2-1">  
+            Hotel
+        </p>
+        
+        <p id="subheading2-2">  
+            Room
+        </p>
+        
+        <p id="subheading2-3">  
+            Staff
+        </p>
+        
+        <p id="subheading2-4">  
+            Services
+        </p>
+          </div>
+            
+                    <div class="col">
+        <p id="paragraph3">Hotel</p>
+        
+        <p id="subheading3-1">  
+            Restaurant
+        </p>
+        
+        <p id="subheading3-2">  
+            Menu
+        </p>
+        
+        <p id="subheading3-3">  
+            Opened
+        </p>
+        
+        <p id="subheading3-4">  
+            Rooms
+        </p>
+            </div>
+            
+            <div class="col">
+                        
+                       
+        <p id="paragraph4">Contact</p>
+        
+        <p id="subheading4-1">  
+            Phone
+        </p>
+        
+        <p id="subheading4-2">  
+            Email
+        </p>
+        
+        <p id="subheading4-3">  
+            Address
+        </p>
+            </div>            
+                            
+            </div>
+        
+        <div id="polka">
+         <div class="fifth-row">
+        
+        <div class="dot"> </div>
+            <div class="dot dot-hidden"> </div>
+            <div class="dot dot-hidden"> </div>
+            <div class="dot dot-hidden"> </div>
+            <div class="dot dot-hidden"> </div>
+            <div class="dot dot-hidden"> </div>
+            <div class="dot dot-hidden"> </div>
+            <div class="dot dot-hidden"> </div>
+            <div class="dot dot-hidden"> </div>
+            <div class="dot dot-hidden"> </div>
+            <div class="dot dot-hidden"> </div>
+            <div class="dot dot-hidden"> </div>
+            <div class="dot dot-hidden"> </div>
+            <div class="dot dot-hidden"> </div>
+            <div class="dot dot-hidden"> </div>
+            <div class="dot dot-hidden"> </div>
+            <div class="dot dot-hidden"> </div>
+            <div class="dot dot-hidden"> </div>
+            <div class="dot"> </div>
+            <div class="dot dot-hidden"> </div>
+            <div class="dot dot-hidden"> </div>
+            <div class="dot dot-hidden"> </div>
+            <div class="dot dot-hidden"> </div>
+            <div class="dot dot-hidden"> </div>
+            <div class="dot dot-hidden"> </div>
+            <div class="dot dot-hidden"> </div>
+            <div class="dot"> </div>
+            <div class="dot dot-hidden"> </div>
+            <div class="dot dot-hidden"> </div>
+            <div class="dot dot-hidden"> </div>
+            <div class="dot dot-hidden"> </div>
+            <div class="dot dot-hidden"> </div>
+            <div class="dot dot-hidden"> </div>
+            <div class="dot dot-hidden"> </div>
+            <div class="dot dot-hidden"> </div>
+            <div class="dot dot-hidden"> </div>
+            <div class="dot dot-hidden"> </div>
+            <div class="dot dot-hidden"> </div>
+            <div class="dot dot-hidden"> </div>
+            <div class="dot dot-hidden"> </div>
+            <div class="dot dot-hidden"> </div>
+            <div class="dot"> </div>
+            <div class="dot dot-hidden"> </div>
+            <div class="dot dot-hidden"> </div>
+            <div class="dot dot-hidden"> </div>
+            <div class="dot dot-hidden"> </div>
+            
+            
+    </div>
+          <div class="fourth-row">
+        
+        <div class="dot"> </div>
+            <div class="dot dot-hidden"> </div>
+            <div class="dot"> </div>
+            <div class="dot dot-hidden"> </div>
+            <div class="dot"> </div>
+            <div class="dot dot-hidden"> </div>
+            <div class="dot dot-hidden"> </div>
+            <div class="dot dot-hidden"> </div>
+            <div class="dot dot-hidden"> </div>
+            <div class="dot dot-hidden"> </div>
+            <div class="dot dot-hidden"> </div>
+            <div class="dot dot-hidden"> </div>
+            <div class="dot dot-hidden"> </div>
+            <div class="dot dot-hidden"> </div>
+            <div class="dot"> </div>
+            <div class="dot dot-hidden"> </div>
+            <div class="dot dot-hidden"> </div>
+            <div class="dot"> </div>
+            <div class="dot"> </div>
+            <div class="dot"> </div>
+            <div class="dot dot-hidden"> </div>
+            <div class="dot dot-hidden"> </div>
+            <div class="dot dot-hidden"> </div>
+            <div class="dot dot-hidden"> </div>
+            <div class="dot dot-hidden"> </div>
+            <div class="dot"> </div>
+            <div class="dot dot-hidden"> </div>
+            <div class="dot"> </div>
+            <div class="dot"> </div>
+            <div class="dot dot-hidden"> </div>
+            <div class="dot dot-hidden"> </div>
+            <div class="dot dot-hidden"> </div>
+            <div class="dot dot-hidden"> </div>
+            <div class="dot dot-hidden"> </div>
+            <div class="dot dot-hidden"> </div>
+            <div class="dot dot-hidden"> </div>
+            <div class="dot dot-hidden"> </div>
+            <div class="dot dot-hidden"> </div>
+            <div class="dot"> </div>
+            <div class="dot dot-hidden"> </div>
+            <div class="dot"> </div>
+            <div class="dot"> </div>
+            <div class="dot dot-hidden"> </div>
+            <div class="dot dot-hidden"> </div>
+            <div class="dot dot-hidden"> </div>
+            <div class="dot dot-hidden"> </div>
+            
+            
+    </div>
+        <div class="third-row">
+        
+        <div class="dot"> </div>
+            <div class="dot"> </div>
+            <div class="dot"> </div>
+            <div class="dot"> </div>
+            <div class="dot"> </div>
+            <div class="dot"> </div>
+            <div class="dot dot-hidden"> </div>
+            <div class="dot dot-hidden"> </div>
+            <div class="dot dot-hidden"> </div>
+            <div class="dot"> </div>
+            <div class="dot dot-hidden"> </div>
+            <div class="dot dot-hidden"> </div>
+            <div class="dot dot-hidden"> </div>
+            <div class="dot"> </div>
+            <div class="dot"> </div>
+            <div class="dot"> </div>
+            <div class="dot"> </div>
+            <div class="dot"> </div>
+            <div class="dot"> </div>
+            <div class="dot"> </div>
+            <div class="dot"> </div>
+            <div class="dot"> </div>
+            <div class="dot dot-hidden"> </div>
+            <div class="dot dot-hidden"> </div>
+            <div class="dot"> </div>
+            <div class="dot"> </div>
+            <div class="dot"> </div>
+            <div class="dot"> </div>
+            <div class="dot"> </div>
+            <div class="dot"> </div>
+            <div class="dot dot-hidden"> </div>
+            <div class="dot dot-hidden"> </div>
+            <div class="dot"> </div>
+            <div class="dot dot-hidden"> </div>
+            <div class="dot dot-hidden"> </div>
+            <div class="dot dot-hidden"> </div>
+            <div class="dot"> </div>
+            <div class="dot dot-hidden"> </div>
+            <div class="dot"> </div>
+            <div class="dot"> </div>
+            <div class="dot"> </div>
+            <div class="dot"> </div>
+            <div class="dot dot-hidden"> </div>
+            <div class="dot dot-hidden"> </div>
+            <div class="dot dot-hidden"> </div>
+            <div class="dot"> </div>
+            
+            
+    </div>
+          <div class="second-row">
+        
+        <div class="dot"> </div>
+            <div class="dot"> </div>
+            <div class="dot"> </div>
+            <div class="dot"> </div>
+            <div class="dot"> </div>
+            <div class="dot"> </div>
+            <div class="dot"> </div>
+            <div class="dot"> </div>
+            <div class="dot"> </div>
+            <div class="dot dot-hidden"> </div>
+            <div class="dot"> </div>
+            <div class="dot"> </div>
+            <div class="dot"> </div>
+            <div class="dot"> </div>
+            <div class="dot"> </div>
+            <div class="dot"> </div>
+            <div class="dot"> </div>
+            <div class="dot"> </div>
+            <div class="dot"> </div>
+            <div class="dot"> </div>
+            <div class="dot"> </div>
+            <div class="dot"> </div>
+            <div class="dot"> </div>
+            <div class="dot"> </div>
+            <div class="dot dot-hidden"> </div>
+            <div class="dot"> </div>
+            <div class="dot"> </div>
+            <div class="dot"> </div>
+            <div class="dot"> </div>
+            <div class="dot"> </div>
+            <div class="dot"> </div>
+            <div class="dot"> </div>
+            <div class="dot"> </div>
+            <div class="dot"> </div>
+            <div class="dot"> </div>
+            <div class="dot"> </div>
+            <div class="dot"> </div>
+            <div class="dot"> </div>
+            <div class="dot"> </div>
+            <div class="dot"> </div>
+            <div class="dot"> </div>
+            <div class="dot"> </div>
+            <div class="dot"> </div>
+            <div class="dot dot-hidden"> </div>
+            <div class="dot"> </div>
+            <div class="dot"> </div>
+            
+            
+    </div>
+        <div class="first-row">
+        
+        <div class="dot"> </div>
+            <div class="dot"> </div>
+            <div class="dot"> </div>
+            <div class="dot"> </div>
+            <div class="dot"> </div>
+            <div class="dot"> </div>
+            <div class="dot"> </div>
+            <div class="dot"> </div>
+            <div class="dot"> </div>
+            <div class="dot"> </div>
+            <div class="dot"> </div>
+            <div class="dot"> </div>
+            <div class="dot"> </div>
+            <div class="dot"> </div>
+            <div class="dot"> </div>
+            <div class="dot"> </div>
+            <div class="dot"> </div>
+            <div class="dot"> </div>
+            <div class="dot"> </div>
+            <div class="dot"> </div>
+            <div class="dot"> </div>
+            <div class="dot"> </div>
+            <div class="dot"> </div>
+            <div class="dot"> </div>
+            <div class="dot"> </div>
+            <div class="dot"> </div>
+            <div class="dot"> </div>
+            <div class="dot"> </div>
+            <div class="dot"> </div>
+            <div class="dot"> </div>
+            <div class="dot"> </div>
+            <div class="dot"> </div>
+            <div class="dot"> </div>
+            <div class="dot"> </div>
+            <div class="dot"> </div>
+            <div class="dot"> </div>
+            <div class="dot"> </div>
+            <div class="dot"> </div>
+            <div class="dot"> </div>
+            <div class="dot"> </div>
+            <div class="dot"> </div>
+            <div class="dot"> </div>
+            <div class="dot"> </div>
+            <div class="dot"> </div>
+            <div class="dot"> </div>
+            <div class="dot"> </div>
+            
+            
+    </div>
+        </div>
+        </div>
+</footer>
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+
+</html>

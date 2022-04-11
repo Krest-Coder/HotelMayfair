@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Hotel Mayfair</title>
+    <meta name="Hotel Mayfair " content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/landingpage.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+</head>
+<body>
+
+
+<header class ="d-flex flex-row justify-content-between p-4 mb-0">
+    <span class="landingpage-header-logo p-2">
+        Hotel Mayfair
+    </span>
+    <nav class="">
+      <ul class="nav justify-content-end">
+          <li class="nav-item header-nav-item">
+            <a class=" class-home nav-link active" href="index.html">HOME</a>
+          </li>
+          <li class="nav-item header-nav-item">
+            <a class=" class-room nav-link" href="room.html">ROOMS & SUITES</a>
+          </li>
+          <li class="nav-item header-nav-item">
+            <a class="  class-fac nav-link" href="facilities.html">FACILITIES</a>
+          </li>
+          <li class="nav-item header-nav-item ">
+              <a class=" class-contact nav-link" href="contactUs.html">CONTACT US</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+                                        <!-- CAROUSEL START HERE -->
+                               
+<div class=" mt-0">
+  <div class="bookingInput  p-3 ">
+   <form class="input-group pa2 ">
+     <p class="input-group-prepend">
+         <span class="input-group-text  ">BOOK A ROOM</span>
+     </p>
+     <input type="text" class="form-control inputBorder" placeholder="Arrival Date"
+      required pattern="(?:19|20)\[0-9\]{2}-(?:(?:0\[1-9\]|1\[0-2\])/(?:0\[1-9\]|1\[0-9\]|2\[0-9\])|(?:(?!02)(?:0\[1-9\]|1\[0-2\])/(?:30))|(?:(?:0\[13578\]|1\[02\])-31))"> <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+     <input type="text" class="form-control inputBorder" placeholder="Departure Date" 
+     required pattern="(?:19|20)\[0-9\]{2}-(?:(?:0\[1-9\]|1\[0-2\])/(?:0\[1-9\]|1\[0-9\]|2\[0-9\])|(?:(?!02)(?:0\[1-9\]|1\[0-2\])/(?:30))|(?:(?:0\[13578\]|1\[02\])-31))"> <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+   <select class="form-control inputBorder" id="rooms" name="Rooms">
+         <option>Rooms</option>
+         <option>Single</option>
+         <option>Standard Detachment</option>
+         <option>Suites</option>
+         <option>Deluxe</option>
+     </select>
+     <select class="form-control inputBorder" id="gender" name="gender">
+         <option>Gender</option>
+         <option>Male</option>
+         <option>Female</option>
+         <option>Care not to Say</option>
+     </select>
+     <select class="form-control inputBorder" id="Category" name="Category">
+         <option>Category</option>
+         <option>Adult</option>
+         <option>Teenage</option>
+         <option>Family (For suite)</option>
+
+     </select>
+     <input type="submit" value="BOOK" class="pa-2 m-2 bg-primary bookButton">
+   </form>
+ </div>
+
+ <!-- Carousel -->
+ <div id="carousel" class="carousel slide" data-ride="carousel">
+
+     <!-- Indicators -->
+     <ul class="carousel-indicators">
+       <li data-target="#demo" data-slide-to="0" class="active"></li>
+       <li data-target="#demo" data-slide-to="1"></li>
+       <li data-target="#demo" data-slide-to="2"></li>
+       <li data-target="#demo" data-slide-to="4"></li>
+     </ul>
+     
+     <!-- The slideshow -->
+     <div class="carousel-inner" role="listbox">
+       <div class="carousel-item item">
+         <img src="./img/land/Rectangle 118.svg" class="d-block w-100" alt="Loss" height="500">
+         <div class="carousel-caption mb3">
+             <h3 class="animated bounceInRight" style="animation-delay: 1s">TO TRAVEL IS TO LIVE</h3>
+             <p class="animated bounceInLeft" style="animation-delay: 2s">You dont't need magic to disappear, All you need is destination!</p>
+             <button class="bg-info">Show on the map</button>
+             <button>MORE INFO</button>
+         </div>
+       </div>
+       <div class="carousel-item item active">
+         <img src="./img/land/Rectangle 2.svg" class="d-block w-100" height="500" alt="ago" >
+         <div class="carousel-caption">
+             <h3 class="animated slideInDown" style="animation-delay: 1s">Stay with us feel like home</h3>
+             <p class="animated slideInRight" style="animation-delay: 2s">Make your stay memorable.!</p>
+             <button class="bg-info">Show on the map</button>
+             <button>MORE INFO</button>
+         </div>
+       </div>
+       <div class="carousel-item item">
+         <img src="./img/land/Rectangle 2 (1).svg" class="d-block w-100" height="500" alt="rtgtr" >
+         <div class="carousel-caption">
+             <h3 class="animated zoomIn" style="animation-delay: 1s">Come, stay and enjoy your day.</h3>
+             <p class="animated zoomIn" style="animation-delay: 2s">The most memorable rest time starts here.!</p>
+             <button class="bg-info">Show on the map</button>
+             <button>MORE INFO</button>
+         </div>
+       </div>
+       <div class="carousel-item item">
+         <img src="./img/land/Rectangle3.svg" class="d-block w-100" alt="rtgtr" height="500">
+         <div class="carousel-caption">
+             <h3 class="animated bounceInRight" style="animation-delay: 1s">Where cozy memory lasts</h3>
+             <p animated bounceInLeft>We share a passion for hospitality.!</p>
+             <button class="bg-info">Show on the map</button>
+             <button>MORE INFO</button>
+         </div>
+       </div>
+     </div>
+     
+     <!-- Left and right controls -->
+     <a class="carousel-control-prev" href="#demo" data-slide="prev">
+       <span class="carousel-control-prev-icon"></span>
+     </a>
+     <a class="carousel-control-next" href="#demo" data-slide="next">
+       <span class="carousel-control-next-icon"></span>
+     </a>
+   </div>
+ </div>
+                            <!-- ***************************************Carousel coontainer ends here *****************************  -->
+    <section  class="container mt-5 mb-0 stackSection">
+        <p class= "landingpage-header-logo">Hotel <span class="blue f1">F</span>renz</p>
+        <h1 class="tc">Your Perfect Escape</h1>
+        <div class="grid">
+            <div class="row ">
+                <div class="col-sm-6 stacktext">
+                    <p>Hotel Mayfair is located in the heart of the historic center of Lagos in an extremely characteristic, quite and lively
+                         area within short walk distance to all sites and is surrounded by the extraordinary beauty of churches, buildings,
+                          shops and monuments. Mayfair Hotel is part of a lovingly restored 1800 palace.
+                    </p>
+                    <p>On entering this charming hotel in Bhubanewar, you will immediately sense its special intimate atmosphere that makes you 
+                        feel like being in your own Palace home. Each detail has been passionately chosen and each room deserves a visit. 
+                        Hotel Franz style mixes valuable antiques and original artworks with an unexpected eclectic contemporary twist. 
+                        The entire House recalls the ancient ‘Palazzi’ of times past where young Africans lived while discovering the
+                         beauty and the artistic mysteries of Bhubanewar.
+                    </p>
+                </div>
+                <div class="col-sm-6">
+                   <div class=" stack">
+                   <div class="col grow"><image src="./img/land/Rectangle 71.svg"  class="" style="width:100%" alt="s" /></div>
+                   <div class="col shadow"><image src="./img/land/Rectangle 8.svg"  class="" style="width:100%" alt="s" /></div>
+                    <div class="col dim"><image src="./img/land/Rectangle 9.svg" class="" style="width:100%"alt="a" /></div>
+                   </div>
+                 </div>
+                
+            </div>
+        </div>
+    </section><hr>
+    
+    
+<!-- DEALS AVAILABLE SECTION -->
+    <section>
+        <div class="container dealavailable mb-3">
+            <h4 class="text-center" >See Top Deals Available to you</h4>
+            <div class="row">
+
+                <div class="col-lg-3 col-md-6 col-sm-6 mb-3">
+                    <div class="card">
+                        <img src="img/land/Rectangle 10.png" alt="" class="img-fluid">
+                        <div class="d-flex justify-content-between mt-3">
+                            <div>
+                                <p>Deluxe Room <br> <span>150,000/night</span></p>
+                            </div>
+                            <div>
+                                <button class="btn btn-sm">BOOK</button>
+                            </div>
+                       </div>
+                    </div>
+                    <hr>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-6 mb-3">
+                    <div class="card">
+                        <img src="img/land/Rectangle 11.png" alt="" class="img-fluid">
+                        <div class="d-flex justify-content-between mt-3">
+                            <div>
+                                <p>Deluxe Room <br> <span>150,000/night</span></p>
+                            </div>
+                            <div>
+                                <button class="btn">BOOK</button>
+                            </div>
+                       </div>
+                    </div>
+                    <hr>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-6 mb-3">
+                    <div class="card">
+                        <img src="img/land/Rectangle 12.png" alt="" class="img-fluid">
+                        <div class="d-flex justify-content-between mt-3">
+                            <div>
+                                <p>Deluxe Room <br> <span>150,000/night</span></p>
+                            </div>
+                            <div>
+                                <button class="btn">BOOK</button>
+                            </div>
+                       </div>
+                    </div>
+                    <hr>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-6 mb-3">
+                    <div class="card">
+                        <img src="img/land/Rectangle 13.png" alt="" class="img-fluid">
+                        <div class="d-flex justify-content-between mt-3">
+                            <div>
+                                <p>Deluxe Room <br> <span>150,000/night</span></p>
+                            </div>
+                            <div>
+                                <button class="btn">BOOK</button>
+                            </div>
+                       </div>
+                    </div>
+                    <hr>
+                </div>
+               
+            </div>
+        </div>
+
+    </section>
+
+    <!-- BEGINNING OF SPECIAL OFFER SECTION -->
+    <section class="container-fluid" >
+        <div class="specialoffer">
+            <h2 class="text-center card-head">Special Offers</h2>
+            <div class="card-group">
+                <div class="card">
+                    <img src="./img/land/Rectangle11.png" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                        <h5 class="card-title">Honeymoon</h5>
+                        <p class="card-text">
+                            Start off your marriage with a blissful getaway with Hotel Franz
+                            where we make sure that you magic to begin your lives together.
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./img/land/Rectangle16.png" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                        <h5 class="card-title">Family Holidays</h5>
+                        <p class="card-text">
+                            Experience the Get-away you’ve not experienced before with Hotel
+                            Franz. Make every member of the family experience magic today.
+                            Make a wish
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./img/land/Rectangle17.png" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                        <h5 class="card-title">Business Trips</h5>
+                        <p class="card-text">
+                            Allow us impress your clients when you book a room with Hotel
+                            Franz. Give them the magic they deserve. Make a wish
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END OF SPECIAL OFFER SECTION -->
+
+
+    <!--  CLIENTS Feedbacks -->
+           
+    <article class="container mt-3 mb-5">
+    <div class=" text-center">
+      <h3> HAPPY CLIENTS</h3>
+      <p>What customers say about us, and why you should choose us...</p>
+      <div class="offset-lg-1" >
+      <p class="feedbacks br">
+        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis 
+        praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati 
+        cupiditate non provident, similique sunt in culpa qui officia 
+        deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.
+      </p>
+      <div class="flex-row justify-content-center p-3">
+       <i class="fa fa-star" aria-hidden="true"></i></icon>
+       <i class="fa fa-star" aria-hidden="true"></i></icon>
+       <i class="fa fa-star" aria-hidden="true"></i></icon>
+       <i class="fa fa-star" aria-hidden="true"></i></icon>
+       <i class="fa fa-star" aria-hidden="true"></i></icon>
+     
+      </div class="p-4">
+      <img src="./img/land/Ellipse 1.svg" alt="...">
+      <span>Angela Samara </span>
+      </div>
+      
+    </div>  
+  </article>
+
+
+
+    <div id="footer" class="container-fluid">
+    
+    <div class="row">
+        <div class="col-5">
+<p id="paragraph1"> Hotel Mayfair </p>
+    
+    <p id="subheading1"> Hotel Mayfair is located in the heart of the historic center of Lagos in an extremely characteristic, quite and lively area within short walk distance to all sites and is surrounded by the extraordinary beauty of churches, buildings, shops and monuments. Hotel is part of a lovingly restored 1800 palace. </p>
+</div>
+    
+        
+        <div class="col">
+    <p id="paragraph2">About</p>
+    
+    <p id="subheading2-1">  
+        Hotel
+    </p>
+    
+    <p id="subheading2-2">  
+        Room
+    </p>
+    
+    <p id="subheading2-3">  
+        Staff
+    </p>
+    
+    <p id="subheading2-4">  
+        Services
+    </p>
+      </div>
+        
+                <div class="col">
+    <p id="paragraph3">Hotel</p>
+    
+    <p id="subheading3-1">  
+        Restaurant
+    </p>
+    
+    <p id="subheading3-2">  
+        Menu
+    </p>
+    
+    <p id="subheading3-3">  
+        Opened
+    </p>
+    
+    <p id="subheading3-4">  
+        Rooms
+    </p>
+        </div>
+        
+        <div class="col">
+                    
+                   
+    <p id="paragraph4">Contact</p>
+    
+    <p id="subheading4-1">  
+        Phone
+    </p>
+    
+    <p id="subheading4-2">  
+        Email
+    </p>
+    
+    <p id="subheading4-3">  
+        Address
+    </p>
+        </div>            
+                        
+        </div>
+    
+    <div id="polka">
+     <div class="fifth-row">
+    
+    <div class="dot"> </div>
+        <div class="dot dot-hidden"> </div>
+        <div class="dot dot-hidden"> </div>
+        <div class="dot dot-hidden"> </div>
+        <div class="dot dot-hidden"> </div>
+        <div class="dot dot-hidden"> </div>
+        <div class="dot dot-hidden"> </div>
+        <div class="dot dot-hidden"> </div>
+        <div class="dot dot-hidden"> </div>
+        <div class="dot dot-hidden"> </div>
+        <div class="dot dot-hidden"> </div>
+        <div class="dot dot-hidden"> </div>
+        <div class="dot dot-hidden"> </div>
+        <div class="dot dot-hidden"> </div>
+        <div class="dot dot-hidden"> </div>
+        <div class="dot dot-hidden"> </div>
+        <div class="dot dot-hidden"> </div>
+        <div class="dot dot-hidden"> </div>
+        <div class="dot"> </div>
+        <div class="dot dot-hidden"> </div>
+        <div class="dot dot-hidden"> </div>
+        <div class="dot dot-hidden"> </div>
+        <div class="dot dot-hidden"> </div>
+        <div class="dot dot-hidden"> </div>
+        <div class="dot dot-hidden"> </div>
+        <div class="dot dot-hidden"> </div>
+        <div class="dot"> </div>
+        <div class="dot dot-hidden"> </div>
+        <div class="dot dot-hidden"> </div>
+        <div class="dot dot-hidden"> </div>
+        <div class="dot dot-hidden"> </div>
+        <div class="dot dot-hidden"> </div>
+        <div class="dot dot-hidden"> </div>
+        <div class="dot dot-hidden"> </div>
+        <div class="dot dot-hidden"> </div>
+        <div class="dot dot-hidden"> </div>
+        <div class="dot dot-hidden"> </div>
+        <div class="dot dot-hidden"> </div>
+        <div class="dot dot-hidden"> </div>
+        <div class="dot dot-hidden"> </div>
+        <div class="dot dot-hidden"> </div>
+        <div class="dot"> </div>
+        <div class="dot dot-hidden"> </div>
+        <div class="dot dot-hidden"> </div>
+        <div class="dot dot-hidden"> </div>
+        <div class="dot dot-hidden"> </div>
+        
+        
+</div>
+      <div class="fourth-row">
+    
+    <div class="dot"> </div>
+        <div class="dot dot-hidden"> </div>
+        <div class="dot"> </div>
+        <div class="dot dot-hidden"> </div>
+        <div class="dot"> </div>
+        <div class="dot dot-hidden"> </div>
+        <div class="dot dot-hidden"> </div>
+        <div class="dot dot-hidden"> </div>
+        <div class="dot dot-hidden"> </div>
+        <div class="dot dot-hidden"> </div>
+        <div class="dot dot-hidden"> </div>
+        <div class="dot dot-hidden"> </div>
+        <div class="dot dot-hidden"> </div>
+        <div class="dot dot-hidden"> </div>
+        <div class="dot"> </div>
+        <div class="dot dot-hidden"> </div>
+        <div class="dot dot-hidden"> </div>
+        <div class="dot"> </div>
+        <div class="dot"> </div>
+        <div class="dot"> </div>
+        <div class="dot dot-hidden"> </div>
+        <div class="dot dot-hidden"> </div>
+        <div class="dot dot-hidden"> </div>
+        <div class="dot dot-hidden"> </div>
+        <div class="dot dot-hidden"> </div>
+        <div class="dot"> </div>
+        <div class="dot dot-hidden"> </div>
+        <div class="dot"> </div>
+        <div class="dot"> </div>
+        <div class="dot dot-hidden"> </div>
+        <div class="dot dot-hidden"> </div>
+        <div class="dot dot-hidden"> </div>
+        <div class="dot dot-hidden"> </div>
+        <div class="dot dot-hidden"> </div>
+        <div class="dot dot-hidden"> </div>
+        <div class="dot dot-hidden"> </div>
+        <div class="dot dot-hidden"> </div>
+        <div class="dot dot-hidden"> </div>
+        <div class="dot"> </div>
+        <div class="dot dot-hidden"> </div>
+        <div class="dot"> </div>
+        <div class="dot"> </div>
+        <div class="dot dot-hidden"> </div>
+        <div class="dot dot-hidden"> </div>
+        <div class="dot dot-hidden"> </div>
+        <div class="dot dot-hidden"> </div>
+        
+        
+</div>
+    <div class="third-row">
+    
+    <div class="dot"> </div>
+        <div class="dot"> </div>
+        <div class="dot"> </div>
+        <div class="dot"> </div>
+        <div class="dot"> </div>
+        <div class="dot"> </div>
+        <div class="dot dot-hidden"> </div>
+        <div class="dot dot-hidden"> </div>
+        <div class="dot dot-hidden"> </div>
+        <div class="dot"> </div>
+        <div class="dot dot-hidden"> </div>
+        <div class="dot dot-hidden"> </div>
+        <div class="dot dot-hidden"> </div>
+        <div class="dot"> </div>
+        <div class="dot"> </div>
+        <div class="dot"> </div>
+        <div class="dot"> </div>
+        <div class="dot"> </div>
+        <div class="dot"> </div>
+        <div class="dot"> </div>
+        <div class="dot"> </div>
+        <div class="dot"> </div>
+        <div class="dot dot-hidden"> </div>
+        <div class="dot dot-hidden"> </div>
+        <div class="dot"> </div>
+        <div class="dot"> </div>
+        <div class="dot"> </div>
+        <div class="dot"> </div>
+        <div class="dot"> </div>
+        <div class="dot"> </div>
+        <div class="dot dot-hidden"> </div>
+        <div class="dot dot-hidden"> </div>
+        <div class="dot"> </div>
+        <div class="dot dot-hidden"> </div>
+        <div class="dot dot-hidden"> </div>
+        <div class="dot dot-hidden"> </div>
+        <div class="dot"> </div>
+        <div class="dot dot-hidden"> </div>
+        <div class="dot"> </div>
+        <div class="dot"> </div>
+        <div class="dot"> </div>
+        <div class="dot"> </div>
+        <div class="dot dot-hidden"> </div>
+        <div class="dot dot-hidden"> </div>
+        <div class="dot dot-hidden"> </div>
+        <div class="dot"> </div>
+        
+        
+</div>
+      <div class="second-row">
+    
+    <div class="dot"> </div>
+        <div class="dot"> </div>
+        <div class="dot"> </div>
+        <div class="dot"> </div>
+        <div class="dot"> </div>
+        <div class="dot"> </div>
+        <div class="dot"> </div>
+        <div class="dot"> </div>
+        <div class="dot"> </div>
+        <div class="dot dot-hidden"> </div>
+        <div class="dot"> </div>
+        <div class="dot"> </div>
+        <div class="dot"> </div>
+        <div class="dot"> </div>
+        <div class="dot"> </div>
+        <div class="dot"> </div>
+        <div class="dot"> </div>
+        <div class="dot"> </div>
+        <div class="dot"> </div>
+        <div class="dot"> </div>
+        <div class="dot"> </div>
+        <div class="dot"> </div>
+        <div class="dot"> </div>
+        <div class="dot"> </div>
+        <div class="dot dot-hidden"> </div>
+        <div class="dot"> </div>
+        <div class="dot"> </div>
+        <div class="dot"> </div>
+        <div class="dot"> </div>
+        <div class="dot"> </div>
+        <div class="dot"> </div>
+        <div class="dot"> </div>
+        <div class="dot"> </div>
+        <div class="dot"> </div>
+        <div class="dot"> </div>
+        <div class="dot"> </div>
+        <div class="dot"> </div>
+        <div class="dot"> </div>
+        <div class="dot"> </div>
+        <div class="dot"> </div>
+        <div class="dot"> </div>
+        <div class="dot"> </div>
+        <div class="dot"> </div>
+        <div class="dot dot-hidden"> </div>
+        <div class="dot"> </div>
+        <div class="dot"> </div>
+        
+        
+</div>
+    <div class="first-row">
+    
+    <div class="dot"> </div>
+        <div class="dot"> </div>
+        <div class="dot"> </div>
+        <div class="dot"> </div>
+        <div class="dot"> </div>
+        <div class="dot"> </div>
+        <div class="dot"> </div>
+        <div class="dot"> </div>
+        <div class="dot"> </div>
+        <div class="dot"> </div>
+        <div class="dot"> </div>
+        <div class="dot"> </div>
+        <div class="dot"> </div>
+        <div class="dot"> </div>
+        <div class="dot"> </div>
+        <div class="dot"> </div>
+        <div class="dot"> </div>
+        <div class="dot"> </div>
+        <div class="dot"> </div>
+        <div class="dot"> </div>
+        <div class="dot"> </div>
+        <div class="dot"> </div>
+        <div class="dot"> </div>
+        <div class="dot"> </div>
+        <div class="dot"> </div>
+        <div class="dot"> </div>
+        <div class="dot"> </div>
+        <div class="dot"> </div>
+        <div class="dot"> </div>
+        <div class="dot"> </div>
+        <div class="dot"> </div>
+        <div class="dot"> </div>
+        <div class="dot"> </div>
+        <div class="dot"> </div>
+        <div class="dot"> </div>
+        <div class="dot"> </div>
+        <div class="dot"> </div>
+        <div class="dot"> </div>
+        <div class="dot"> </div>
+        <div class="dot"> </div>
+        <div class="dot"> </div>
+        <div class="dot"> </div>
+        <div class="dot"> </div>
+        <div class="dot"> </div>
+        <div class="dot"> </div>
+        <div class="dot"> </div>
+        
+        
+</div>
+    </div>
+    </div>
+     
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js"></script>
+</body>
+</html>
